@@ -1,14 +1,16 @@
 nav {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   height: 60px;
   background-color: grey;
   width: 100%;
+  margin-bottom: 30px;
 }
 
 nav > a {
   color: white;
+  font-size: 30px;
 
 }
 

@@ -9,7 +9,7 @@ const Starship = ({ starship }) => {
     <div className={styles.starshipCard}>
       <h2>{starship.name}</h2>
       <div className={styles.linkContainer}>
-        <Link><button>useLocation</button></Link>
+        <Link to='/starships/details' state={{starship}}><button>useLocation</button></Link>
         <Link><button>NO useLocation</button></Link>
       </div>
     </div>

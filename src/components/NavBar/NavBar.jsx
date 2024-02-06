@@ -7,7 +7,7 @@ import './NavBar.module.css'
 const NavBar = () => {
   return ( 
     <nav>
-      <NavLink to='/starships'>Starship List</NavLink>
+      <NavLink to='/starships'>STAR WARS STARSHIPS</NavLink>
     </nav>
   )
 }
