@@ -1,10 +1,14 @@
-import './NavBar.css'
+// npm modules
+import { NavLink } from 'react-router-dom'
+
+// css
+import './NavBar.module.css'
 
 const NavBar = () => {
   return ( 
-    <header>
-      <h1>STAR WARS STARSHIPS</h1>
-    </header>
+    <nav>
+      <NavLink to='/starships'>Starship List</NavLink>
+    </nav>
   )
 }
 
