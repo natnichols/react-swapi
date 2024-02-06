@@ -1,8 +1,18 @@
-const Starship = () => {
+// npm modules
+import { Link } from 'react-router-dom'
+
+// css
+import styles from './Starship.module.css'
+
+const Starship = ({ starship }) => {
   return ( 
-    <>
-      <h1>Ship Card</h1>
-    </>
+    <div className={styles.starshipCard}>
+      <h2>{starship.name}</h2>
+      <div className={styles.linkContainer}>
+        <Link><button>useLocation</button></Link>
+        <Link><button>NO useLocation</button></Link>
+      </div>
+    </div>
   )
 }
 

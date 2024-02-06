@@ -1,0 +1,23 @@
+.starshipCard {
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  width: 300px;
+  background-color: goldenrod;
+  border-radius: 16px;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+.linkContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+button {
+  margin: 5px;
+  background-color: #006280;
+  font-size: 14px;
+}
