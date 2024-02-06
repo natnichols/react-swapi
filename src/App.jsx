@@ -1,9 +1,7 @@
 // npm modules
-import { useState } from 'react'
 import { Route, Routes, useNavigate } from 'react-router-dom'
 
 // components
-import Starship from './components/Starship/Starship'
 import NavBar from './components/NavBar/NavBar'
 
 //pages
