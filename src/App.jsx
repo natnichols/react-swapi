@@ -8,7 +8,8 @@ import NavBar from './components/NavBar/NavBar'
 
 //pages
 import StarshipList from './pages/StarshipList/StarshipList'
-import StarshipPage from './pages/StarshipPage/StarshipPage'
+import StarshipPageWithLocationHook from './pages/StarshipPageWithLocationHook/StarshipPageWithLocationHook'
+import StarshipPageWithoutLocationHook from './pages/StarshipPageWithoutLocationHook/StarshipPageWithoutLocationHook'
 
 // css
 import './App.css'
@@ -19,7 +20,8 @@ function App() {
       <NavBar />
       <Routes>
         <Route path='/starships' element={<StarshipList />}/>
-        <Route path='/starships/:starshipId' element={<StarshipPage />}/>
+        <Route path='/starships/:starshipId' element={<StarshipPageWithoutLocationHook />}/>
+        <Route path='/starships/details' element={<StarshipPageWithLocationHook />}/>
       </Routes>
     </>
   )

@@ -1,9 +1,9 @@
-const StarshipPage = () => {
+const StarshipPageWithoutLocationHook = () => {
   return ( 
     <>
-      <h1>Starship Details</h1>
+      <h1>Starship Details (w/out location hook)</h1>
     </>
   )
 }
 
-export default StarshipPage
+export default StarshipPageWithoutLocationHook
