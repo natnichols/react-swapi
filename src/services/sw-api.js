@@ -8,3 +8,12 @@ export async function getAllStarships() {
     console.log(`🚨`, err)
   }
 }
+
+export async function getStarshipData(starshipId) {
+  try {
+    const res = await fetch(`${BASE_URL}/${starshipId}`)
+    return res.json()
+  } catch (err) {
+    console.log(`🚨`, err)
+  }
+}

@@ -3,6 +3,8 @@ import { useEffect, useState } from 'react'
 
 // services
 import * as apiService from '../../services/sw-api'
+
+// components
 import Starship from '../../components/Starship/Starship'
 
 // css
@@ -19,7 +21,7 @@ const StarshipList = () => {
     fetchStarshipData()
   }, [])
   
-  if (!starships.length) return <h2>Please wait...Loading Ships...</h2>
+  if (!starships.length) return <h2>Please wait...Loading Starships...</h2>
   
   return ( 
     <>

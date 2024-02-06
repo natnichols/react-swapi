@@ -10,7 +10,7 @@ const Starship = ({ starship }) => {
       <h2>{starship.name}</h2>
       <div className={styles.linkContainer}>
         <Link to='/starships/details' state={{starship}}><button>useLocation</button></Link>
-        <Link><button>NO useLocation</button></Link>
+        <Link to={`/starships/${starship.url.match(/\d+/)}`}><button>NO useLocation</button></Link>
       </div>
     </div>
   )
